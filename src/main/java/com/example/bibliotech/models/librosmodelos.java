@@ -106,5 +106,7 @@ public void setUbicacion(String ubicacion) {
     public String getUbicacion() {
         return ubicacion;
     }
-
+      public String getId() {
+        return id;
+    }
 }
