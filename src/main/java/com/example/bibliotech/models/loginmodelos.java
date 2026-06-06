@@ -16,13 +16,13 @@ public class loginmodelos {
     @Id
     private String usuario;
     private String password;
-    private String nombre;
+    private String id_user;
 
 
-    public loginmodelos(String usuario, String password, String nombre) {
+    public loginmodelos(String usuario, String password, String id_user) {
         this.usuario = usuario;
         this.password = password;
-        this.nombre = nombre;
+        this.id_user = id_user;
     }
 
     public String getUsuario() {
@@ -41,12 +41,12 @@ public class loginmodelos {
         this.password = password;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getId_user() {
+        return id_user;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setId_user(String id_user) {
+        this.id_user = id_user;
     }
 
     public loginmodelos() {
