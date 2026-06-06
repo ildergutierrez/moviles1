@@ -15,11 +15,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class loginmodelos {
     @Id
     private String usuario;
-    private String password; 
+    private String password;
+    private String nombre;
 
-    public loginmodelos(String usuario, String password) {
+
+    public loginmodelos(String usuario, String password, String nombre) {
         this.usuario = usuario;
         this.password = password;
+        this.nombre = nombre;
     }
 
     public String getUsuario() {
@@ -36,6 +39,14 @@ public class loginmodelos {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public loginmodelos() {
